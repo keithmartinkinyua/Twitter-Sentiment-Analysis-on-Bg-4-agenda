@@ -13,11 +13,11 @@ class VoteClassifier(ClassifierI):
  		self._classifiers = classifiers
  	
  	def classify(self, features):
- 		votes =[]
+ 		votes = []
  		for c in self._classifiers:
  			v = c.classify(features)
  			votes.append(v)
- 		return str(mode(votes)[0])
+ 		return (mode(votes)[0][0])
 
  	def confidence(self, features):
  		votes =[]
