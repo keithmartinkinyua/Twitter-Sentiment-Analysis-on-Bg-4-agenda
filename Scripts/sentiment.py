@@ -28,11 +28,11 @@ class VoteClassifier(ClassifierI):
  		conf = choice_votes / len(votes)
  		return conf
 
-documents_f = open("../Pickled/documents.pickle", "rb")
+documents_f = open("Pickled/documents.pickle", "rb")
 documents = pickle.load(documents_f)
 documents_f.close()
 
-word_features_f = open("../Pickled/word_features.pickle", "rb")
+word_features_f = open("Pickled/word_features.pickle", "rb")
 word_features = pickle.load(word_features_f)
 word_features_f.close()
 
@@ -44,15 +44,15 @@ def find_features(documents):
         features[w] = (w in words)
     return features
 
-open_file = open("../Pickled/NaiveBayesClassifier.pickle", "rb")
+open_file = open("Pickled/NaiveBayesClassifier.pickle", "rb")
 NaiveB = pickle.load(open_file)
 open_file.close()
 
-open_file = open("../Pickled/BernoulliNB.pickle", "rb")
+open_file = open("Pickled/BernoulliNB.pickle", "rb")
 BNB = pickle.load(open_file)
 open_file.close()
 
-open_file = open("../Pickled/LogisticRegression.pickle", "rb")
+open_file = open("Pickled/LogisticRegression.pickle", "rb")
 LR = pickle.load(open_file)
 open_file.close()
 
