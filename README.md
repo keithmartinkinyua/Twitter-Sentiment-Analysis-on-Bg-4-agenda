@@ -1,2 +1,1 @@
-# skin-wih-AI
-using machine learning to diagnose skin diseases
+# Twitter Sentimental Analysis on Big 4 Agenda
