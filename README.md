@@ -1,2 +1,1 @@
-# skin-wih-AI
-using machine learning to diagnose skin diseases
+Sentiment analysis on Tweets based on a hashtag
